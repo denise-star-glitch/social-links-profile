@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 🧠 Basic Setup -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 👓 Makes it responsive -->
 
+  <!-- 📸 Favicon for the browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Social Links Profile</title>
+
+  <!-- 🎨 External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <div class="wrapper">
+    <!-- 🌟 Main Card Container -->
+    <main class="container">
+      <div class="profile">
+        <!-- 👩‍💼 Profile Picture -->
+        <img src="./assets/images/avatar-jessica.jpeg" alt="avatar jessica" class="profile__img">
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+        <!-- 🧑‍🎨 Name and Location -->
+        <h1 class="profile__name">Jessica Randall</h1>
+        <p class="profile__location">London, United Kingdom</p>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- 📚 Short Bio -->
+        <p class="profile__bio">"Front-end developer and avid reader."</p>
+
+        <!-- 🌐 Social Links -->
+        <nav class="links">
+          <a href="https://github.com/" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.frontendmentor.io/" class="link-btn" target="_blank" rel="noopener">Frontend Mentor</a>
+          <a href="https://www.linkedin.com/" class="link-btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/" class="link-btn" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://www.instagram.com/" class="link-btn" target="_blank" rel="noopener">Instagram</a>
+        </nav>
+      </div>
+    </main>
+
+    <!-- ✅ Attribution Footer wrapped in <footer> landmark -->
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://guldeniz1292.wixsite.com/my-site" target="_blank"> Denise 💕 </a>.
+      </footer>
+    </div>
+  </body>
 </html>
